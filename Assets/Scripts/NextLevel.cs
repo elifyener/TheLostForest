@@ -8,5 +8,6 @@ public class NextLevel : MonoBehaviour
     public void SkipNextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
     }
 }
