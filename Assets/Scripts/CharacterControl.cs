@@ -15,6 +15,8 @@ public class CharacterControl : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     private float moveDirection;
 
+    private float vertical;
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -37,16 +39,30 @@ public class CharacterControl : MonoBehaviour
 
         _rigidbody2D.velocity = new Vector2(speed * moveDirection, _rigidbody2D.velocity.y);
 
-        if (jump == true)
+        if (jump)
         {
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, jumpForce);
             
             jump = false; 
         }
+        if (Enemy.isEnemyDeath)
+        {
+            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, jumpForce);
+            Enemy.isEnemyDeath = false;
+        }
+        if (Climb.isClimbing)
+        {
+            _rigidbody2D.gravityScale = 0f;
+            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, Input.GetAxis("Vertical") * 1.5f * speed);
+        }
+        else
+        {
+            _rigidbody2D.gravityScale = 0.9f;
+        }
     }
     private void Update() 
     {
-        if (grounded == true && (Input.GetAxis("Horizontal") != 0))
+        if (grounded && (Input.GetAxis("Horizontal") != 0))
         {
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
@@ -62,18 +78,33 @@ public class CharacterControl : MonoBehaviour
             }
 
         }
-        else if (grounded == true)
+        else if (grounded)
         {
             moveDirection = 0.0f;
             anim.SetFloat("speed", 0.0f);
         }
 
-        if (grounded == true && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space)))
+        if (grounded && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow)))
         {
-            jump = true;
+            if (Climb.isLadder)
+            {
+                Climb.isClimbing = true;
+                anim.SetTrigger("climb");
+            }
+            else
+            {
+                jump = true;
+                anim.SetTrigger("jump");
+            }
             grounded = false;
-            anim.SetTrigger("jump");
             anim.SetBool("grounded", false);
+        }
+
+        if (Climb.isLadder && !grounded && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow)))
+        {
+            grounded = true;
+            anim.SetBool("grounded", true);
+            Climb.isClimbing = false;
         }
     }
 

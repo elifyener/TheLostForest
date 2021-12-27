@@ -8,6 +8,7 @@ TagManager:
   - Star
   - Bee
   - Chest
+  - Ladder
   layers:
   - Default
   - TransparentFX

@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] private Animator anim;
     [SerializeField] private AudioClip audiobee;
+    public static bool isEnemyDeath = false;
     private void OnTriggerEnter2D(Collider2D other) 
     {
         if (other.gameObject.CompareTag("Bee"))
@@ -13,6 +14,7 @@ public class Enemy : MonoBehaviour
             AudioSource.PlayClipAtPoint(audiobee, other.transform.position);
             anim.SetTrigger("enemyDeath");
             StartCoroutine(Enemydestroy(other));
+            isEnemyDeath = true;
         }
     }
 
