@@ -85,4 +85,5 @@ public class CharacterControl : MonoBehaviour
             anim.SetBool("grounded", true);
         }
     }
+    
 }
