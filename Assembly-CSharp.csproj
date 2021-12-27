@@ -38,9 +38,11 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CharacterControl.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
+     <Compile Include="Assets\Scripts\Climb.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\NextLevel.cs" />
-     <Compile Include="Assets\Scripts\Climb.cs" />
+     <Compile Include="Assets\Scripts\Platform.cs" />
+     <Compile Include="Assets\Scripts\StickyPlatform.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
