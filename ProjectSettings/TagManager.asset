@@ -9,6 +9,8 @@ TagManager:
   - Bee
   - Chest
   - Ladder
+  - Death
+  - CheckPoint
   layers:
   - Default
   - TransparentFX
