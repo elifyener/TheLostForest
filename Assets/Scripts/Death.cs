@@ -5,7 +5,8 @@ using UnityEngine;
 public class Death : MonoBehaviour
 {
     public Vector2 checkPos;
-    private Animator anim; 
+    private Animator anim;
+    public static bool isDeath;
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -15,7 +16,7 @@ public class Death : MonoBehaviour
         if (other.gameObject.CompareTag("Death"))
         {
             HealthSystem.health--;
-            anim.SetTrigger("death");
+            isDeath = true;
             Invoke("LoadCheckPoint", 2f);
         }
     }
@@ -23,5 +24,6 @@ public class Death : MonoBehaviour
     void LoadCheckPoint()
     {
         gameObject.transform.position = checkPos;
+        isDeath = false;
     }
 }

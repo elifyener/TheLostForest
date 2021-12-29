@@ -99,7 +99,6 @@ public class CharacterControl : MonoBehaviour
             grounded = false;
             anim.SetBool("grounded", false);
         }
-
         if (Climb.isLadder && !grounded && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow)))
         {
             grounded = true;
