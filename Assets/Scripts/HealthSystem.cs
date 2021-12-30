@@ -10,13 +10,10 @@ public class HealthSystem : MonoBehaviour
         switch (health)
         {
             case 3:
-                Debug.Log("3");
             break;
             case 2:
-                Debug.Log("2");
             break;
             case 1:
-                Debug.Log("1");
             break;
         }
     }

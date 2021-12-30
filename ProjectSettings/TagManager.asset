@@ -11,6 +11,7 @@ TagManager:
   - Ladder
   - Death
   - CheckPoint
+  - Carrot
   layers:
   - Default
   - TransparentFX
@@ -59,4 +60,7 @@ TagManager:
     locked: 0
   - name: Collectible
     uniqueID: 4192763541
+    locked: 0
+  - name: Player
+    uniqueID: 4031648385
     locked: 0
