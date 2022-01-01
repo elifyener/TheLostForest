@@ -232,9 +232,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0510f15f013eee64ca0e480090b1ec00, type: 3}
+  m_audioClip: {fileID: 8300000, guid: bc99e1cdfe055b847a487cd5963a517c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -10446,7 +10446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97e3bfff0507e3c498379c3d316fd030, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioStar: {fileID: 8300000, guid: ab63556a329667a41b281cf2c7b5fcbe, type: 3}
+  audioStar: {fileID: 8300000, guid: 1368f20bb05eb9f4f88ea46b29d2ce3b, type: 3}
 --- !u!114 &462057079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10472,6 +10472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkPos: {x: 0, y: 0}
+  audiohurt: {fileID: 8300000, guid: 539da07ecf4e5fa48bf65e111c96e77c, type: 3}
 --- !u!114 &462057081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11336,7 +11337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea3a6784370fa0e42b39ef7a68009b07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioenemy: {fileID: 8300000, guid: 274b6e14133964641889ce02cd295d53, type: 3}
+  audioenemy: {fileID: 8300000, guid: 744ea5ee3052ab24d9e98e0c0469ef40, type: 3}
 --- !u!1 &1118583753
 GameObject:
   m_ObjectHideFlags: 0
@@ -11680,7 +11681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea3a6784370fa0e42b39ef7a68009b07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioenemy: {fileID: 8300000, guid: 274b6e14133964641889ce02cd295d53, type: 3}
+  audioenemy: {fileID: 8300000, guid: 744ea5ee3052ab24d9e98e0c0469ef40, type: 3}
 --- !u!1 &1838950656
 GameObject:
   m_ObjectHideFlags: 0
@@ -11765,7 +11766,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8b1f479826368be42973c2598723159b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6847e06751df94943a673625552c4e63, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
@@ -17246,6 +17247,10 @@ PrefabInstance:
       propertyPath: carrot
       value: 
       objectReference: {fileID: 612853514}
+    - target: {fileID: 1101876396912478270, guid: a154c084857b60d46af8f82d7ada7da0, type: 3}
+      propertyPath: audioChest
+      value: 
+      objectReference: {fileID: 8300000, guid: 1382b3763f5b69a4193ffa1e046099f8, type: 3}
     - target: {fileID: 2872909187808613498, guid: a154c084857b60d46af8f82d7ada7da0, type: 3}
       propertyPath: m_Name
       value: Chest

@@ -7,6 +7,7 @@ public class Death : MonoBehaviour
     public Vector2 checkPos;
     private Animator anim;
     public static bool isDeath;
+    [SerializeField] private AudioClip audiohurt;
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -17,6 +18,7 @@ public class Death : MonoBehaviour
         {
             HealthSystem.health--;
             isDeath = true;
+            AudioSource.PlayClipAtPoint(audiohurt, transform.position);
             Invoke("LoadCheckPoint", 2f);
         }
     }
