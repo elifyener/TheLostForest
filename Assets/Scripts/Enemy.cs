@@ -22,6 +22,7 @@ public class Enemy : MonoBehaviour
             Invoke("EnemyDestroy", 1f);
         }
     }
+  
 
     void EnemyDestroy() 
     {
