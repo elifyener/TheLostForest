@@ -6,12 +6,12 @@ TagManager:
   tags:
   - Ground
   - Star
-  - Bee
   - Chest
   - Ladder
   - Death
   - CheckPoint
   - Carrot
+  - Enemy
   layers:
   - Default
   - TransparentFX

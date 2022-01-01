@@ -4,24 +4,28 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private Animator anim;
-    [SerializeField] private AudioClip audiobee;
+    private Animator anim;
+    [SerializeField] private AudioClip audioenemy;
     public static bool isEnemyDeath = false;
+
+    private void Awake()
+    {
+        anim = GetComponent<Animator>();
+    }
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if (other.gameObject.CompareTag("Bee"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            AudioSource.PlayClipAtPoint(audiobee, other.transform.position);
+            AudioSource.PlayClipAtPoint(audioenemy, other.transform.position);
             anim.SetTrigger("enemyDeath");
-            StartCoroutine(Enemydestroy(other));
             isEnemyDeath = true;
+            Invoke("EnemyDestroy", 1f);
         }
     }
 
-    IEnumerator Enemydestroy(Collider2D other) 
+    void EnemyDestroy() 
     {
-        yield return new WaitForSeconds(1f);
-        Destroy(other.gameObject);
-
+        Destroy(gameObject);
+        
     }
 }

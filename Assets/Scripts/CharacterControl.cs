@@ -59,6 +59,7 @@ public class CharacterControl : MonoBehaviour
         {
             _rigidbody2D.gravityScale = 0.9f;
         }
+        
     }
     private void Update() 
     {
@@ -104,6 +105,11 @@ public class CharacterControl : MonoBehaviour
             grounded = true;
             anim.SetBool("grounded", true);
             Climb.isClimbing = false;
+        }
+        if (Death.isDeath)
+        {
+            grounded = false;
+            anim.SetTrigger("death");
         }
     }
 
