@@ -6,6 +6,7 @@ public class Chest : MonoBehaviour
 {
     [SerializeField] private GameObject carrot;
     [SerializeField] private AudioClip audioChest;
+    [SerializeField] private AudioSource audioSource;
     [SerializeField] private Animator anim;
     private bool isOpen = false;
 
@@ -13,7 +14,7 @@ public class Chest : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && !isOpen)
         {
-            AudioSource.PlayClipAtPoint(audioChest, other.transform.position);
+            audioSource.PlayOneShot(audioChest, 0.5f);
             anim.SetBool("open", true);
             carrot.SetActive(true);
             isOpen = true;

@@ -5,17 +5,18 @@ using UnityEngine;
 public class Score : MonoBehaviour
 {
     [SerializeField] private AudioClip audioStar;
+    [SerializeField] private AudioSource _audioSource;
+
+    private void Start()
+    {
+        _audioSource = GetComponent<AudioSource>();
+    }
     
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if (other.gameObject.CompareTag("Star"))
+        if (other.gameObject.CompareTag("Star") || other.gameObject.CompareTag("Carrot"))
         {
-            AudioSource.PlayClipAtPoint(audioStar, other.transform.position);
-            Destroy(other.gameObject);
-        }
-        if (other.gameObject.CompareTag("Carrot"))
-        {
-            AudioSource.PlayClipAtPoint(audioStar, other.transform.position);
+            _audioSource.PlayOneShot(audioStar, 0.5f);
             Destroy(other.gameObject);
         }
         
