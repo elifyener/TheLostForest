@@ -9,7 +9,6 @@ public class CharacterControl : MonoBehaviour
     
     private bool grounded = true;
     private bool jump;
-    private bool moving;
     private Rigidbody2D _rigidbody2D;
     private Animator anim; 
     private SpriteRenderer _spriteRenderer;
@@ -28,14 +27,6 @@ public class CharacterControl : MonoBehaviour
     }
     private void FixedUpdate() 
     {
-        if (_rigidbody2D.velocity!=Vector2.zero)
-        {
-            moving = true;
-        }
-        else
-        {
-            moving = false;
-        }
 
         _rigidbody2D.velocity = new Vector2(speed * moveDirection, _rigidbody2D.velocity.y);
 

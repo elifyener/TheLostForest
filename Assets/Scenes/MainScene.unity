@@ -10770,6 +10770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77b65e3f6ad8a148b326dcf97fdcb17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 462057070}
   checkPos: {x: 0, y: 0}
   audiohurt: {fileID: 8300000, guid: 539da07ecf4e5fa48bf65e111c96e77c, type: 3}
 --- !u!114 &462057081
@@ -12454,6 +12455,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1838950658}
   - component: {fileID: 1838950657}
+  - component: {fileID: 1838950659}
   m_Layer: 0
   m_Name: Barrier0
   m_TagString: Enemy
@@ -12495,12 +12497,33 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1838950656}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 37.384113, y: -9.734955, z: -238.73862}
+  m_LocalPosition: {x: 37.384113, y: -9.734955, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1348987202}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1838950659
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838950656}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 6200000, guid: 3eaa305aab5447b44ab0ac1f2c0d8e92, type: 2}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1867736406
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Death : MonoBehaviour
 {
+    public GameObject player;
     public Vector2 checkPos;
     private Animator anim;
     public static bool isDeath;
@@ -19,7 +20,6 @@ public class Death : MonoBehaviour
             isDeath = true;
             AudioSource.PlayClipAtPoint(audiohurt, transform.position);
             Invoke("LoadCheckPoint", 2f);
-
         }
     }
 
