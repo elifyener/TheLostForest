@@ -8,4 +8,4 @@ PhysicsMaterial2D:
   m_PrefabAsset: {fileID: 0}
   m_Name: Wall Physics Material 2D
   friction: 0
-  bounciness: 0.8
+  bounciness: 0.9

@@ -40,13 +40,14 @@
      <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\Climb.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\Chest.cs" />
      <Compile Include="Assets\Scripts\CheckPoint.cs" />
      <Compile Include="Assets\Scripts\NextLevel.cs" />
      <Compile Include="Assets\Scripts\Death.cs" />
      <Compile Include="Assets\Scripts\StickyPlatform.cs" />
      <Compile Include="Assets\Scripts\HealthSystem.cs" />
      <Compile Include="Assets\Scripts\Platform.cs" />
-     <Compile Include="Assets\Scripts\Chest.cs" />
+     <Compile Include="Assets\Scripts\SlugMove.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
