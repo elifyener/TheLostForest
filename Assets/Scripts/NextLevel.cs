@@ -18,7 +18,7 @@ public class NextLevel : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && Score.carrot>2)
         {
             _audiosource.PlayOneShot(_audioclip, 1);
             StartCoroutine(LoadLevel());

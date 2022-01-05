@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -36,8 +37,14 @@ public class HealthSystem : MonoBehaviour
                 live2.SetActive(false);
                 live1.SetActive(false);
                 live0.SetActive(true);
+                StartCoroutine(RestartLevel());
             break;
         }
+    }
+    IEnumerator RestartLevel(){
+        yield return new WaitForSeconds(1f);
+        health = 3;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     
 }

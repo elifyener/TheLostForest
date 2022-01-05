@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     private Animator anim;
     [SerializeField] private AudioClip audioDeadEnemy;
     [SerializeField] private AudioClip audioAttackEnemy;
+    [SerializeField] private AudioSource audiosourceEnemy;
     public static bool isEnemyDeath = false;
     private bool attack;
     private void Awake()
@@ -30,7 +31,7 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            AudioSource.PlayClipAtPoint(audioDeadEnemy, other.transform.position);
+            audiosourceEnemy.PlayOneShot(audioDeadEnemy,0.5f);
             anim.SetTrigger("enemyDeath");
             isEnemyDeath = true;
             Invoke("EnemyDestroy", 1f);
@@ -41,7 +42,7 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && audioAttackEnemy != null)
         {
-            AudioSource.PlayClipAtPoint(audioAttackEnemy, transform.position);
+            audiosourceEnemy.PlayOneShot(audioAttackEnemy,0.5f);
             attack = true;
         }
         

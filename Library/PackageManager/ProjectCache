@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637759555312734435
-    m_Hash: 1543898058
+      ticks: 637770051428020470
+    m_Hash: 365691953
   m_LockFileStatus:
     m_FilePath: D:/@Projects/The Lost Forest/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637759555647376209
-    m_Hash: 2888801861
+      ticks: 637770051519479513
+    m_Hash: 810277478
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -631,6 +631,276 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
+    - packageId: com.unity.ads@3.7.5
+      testable: 0
+      isDirectDependency: 1
+      version: 3.7.5
+      source: 1
+      resolvedPath: D:\@Projects\The Lost Forest\Library\PackageCache\com.unity.ads@3.7.5
+      assetPath: Packages/com.unity.ads
+      name: com.unity.ads
+      displayName: Advertisement
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Unity Ads is a video ad network for iOS and Android that allows
+        you to quickly and effectively monetize your games.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.6
+        - 0.0.7
+        - 0.0.8
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 2.0.0
+        - 2.0.3
+        - 2.0.4
+        - 2.0.7
+        - 2.0.8
+        - 2.3.1
+        - 2.3.2
+        - 3.0.1
+        - 3.0.2
+        - 3.0.3
+        - 3.1.1
+        - 3.2.0
+        - 3.3.0
+        - 3.3.1
+        - 3.4.0
+        - 3.4.1
+        - 3.4.2
+        - 3.4.4
+        - 3.4.5
+        - 3.4.7
+        - 3.4.9
+        - 3.5.0
+        - 3.5.2
+        - 3.6.1
+        - 3.7.0
+        - 3.7.1
+        - 3.7.3
+        - 3.7.5
+        - 4.0.0
+        compatible:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.6
+        - 0.0.7
+        - 0.0.8
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 2.0.0
+        - 2.0.3
+        - 2.0.4
+        - 2.0.7
+        - 2.0.8
+        - 2.3.1
+        - 2.3.2
+        - 3.0.1
+        - 3.0.2
+        - 3.0.3
+        - 3.1.1
+        - 3.2.0
+        - 3.3.0
+        - 3.3.1
+        - 3.4.0
+        - 3.4.1
+        - 3.4.2
+        - 3.4.4
+        - 3.4.5
+        - 3.4.7
+        - 3.4.9
+        - 3.5.0
+        - 3.5.2
+        - 3.6.1
+        - 3.7.0
+        - 3.7.1
+        - 3.7.3
+        - 3.7.5
+        - 4.0.0
+        verified: 3.7.5
+      dependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      keywords:
+      - ads
+      - unity
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637635162230000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.ads.git
+        revision: 0e92fa56fc4e4cd1fa305e76a911acdae6386b96
+        path: 
+    - packageId: com.unity.analytics@3.6.11
+      testable: 0
+      isDirectDependency: 1
+      version: 3.6.11
+      source: 1
+      resolvedPath: D:\@Projects\The Lost Forest\Library\PackageCache\com.unity.analytics@3.6.11
+      assetPath: Packages/com.unity.analytics
+      name: com.unity.analytics
+      displayName: Analytics Library
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: The Unity Analytics Library contains the Analytics Event Tracker
+        component, the Data Privacy plug-in, and the Standard Events API.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.7
+        - 0.0.8
+        - 0.0.9
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 0.0.17
+        - 0.0.19
+        - 2.0.5
+        - 2.0.11
+        - 2.0.13
+        - 2.0.14
+        - 2.0.15
+        - 2.0.16
+        - 3.0.5
+        - 3.0.9
+        - 3.1.1
+        - 3.2.0
+        - 3.2.2
+        - 3.2.3
+        - 3.3.0
+        - 3.3.2-preview
+        - 3.3.2
+        - 3.3.4
+        - 3.3.5
+        - 3.4.0
+        - 3.5.3
+        - 3.6.11
+        - 3.6.12
+        - 3.7.1
+        compatible:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.7
+        - 0.0.8
+        - 0.0.9
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 0.0.17
+        - 0.0.19
+        - 2.0.5
+        - 2.0.11
+        - 2.0.13
+        - 2.0.14
+        - 2.0.15
+        - 2.0.16
+        - 3.0.5
+        - 3.0.9
+        - 3.1.1
+        - 3.2.0
+        - 3.2.2
+        - 3.2.3
+        - 3.3.0
+        - 3.3.2-preview
+        - 3.3.2
+        - 3.3.4
+        - 3.3.5
+        - 3.4.0
+        - 3.5.3
+        - 3.6.11
+        - 3.6.12
+        - 3.7.1
+        verified: 3.6.12
+      dependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      keywords:
+      - analytics
+      - unity
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637629809450000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.analytics.git
+        revision: e79ad7c394f265365ea4389b6142b2ee72299037
+        path: 
     - packageId: com.unity.collab-proxy@1.15.1
       testable: 0
       isDirectDependency: 1
@@ -1024,6 +1294,183 @@ m_PackageAssets:
         type: git
         url: git+https://github.com/Unity-Technologies/com.unity.ide.vscode.git
         revision: 1f4f605d5c988cb610c372b5c5216c46cc8f5d30
+        path: 
+    - packageId: com.unity.purchasing@4.0.3
+      testable: 0
+      isDirectDependency: 1
+      version: 4.0.3
+      source: 1
+      resolvedPath: D:\@Projects\The Lost Forest\Library\PackageCache\com.unity.purchasing@4.0.3
+      assetPath: Packages/com.unity.purchasing
+      name: com.unity.purchasing
+      displayName: In App Purchasing
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: "IMPORTANT UPGRADE NOTES:\n\nIf updating from Unity IAP (com.unity.purchasing
+        + the Asset Store plugin) versions 2.x to version 3.x, complete the following
+        actions in order to resolve compilation errors:\n 1. Move IAPProductCatalog.json
+        and BillingMode.json\n\tFROM: Assets/Plugins/UnityPurchasing/Resources/\n\tTO:
+        Assets/Resources/.\n 2. Move AppleTangle.cs and GooglePlayTangle.cs\n\tFROM:
+        Assets/Plugins/UnityPurchasing/generated\n\tTO: Assets/Scripts/UnityPurchasing/generated.\n
+        3. Remove all remaining Asset Store plugin folders and files in Assets/Plugins/UnityPurchasing
+        from your project.\n\nPACKAGE DESCRIPTION:\n\nWith Unity IAP, setting up
+        in-app purchases for your game across multiple app stores has never been
+        easier.\n\nThis package provides:\n\n \u25AA One common API to access all
+        stores for free so you can fully understand and optimize your in-game economy\n
+        \u25AA Automatic coupling with Unity Analytics to enable monitoring and decision-making
+        based on trends in your revenue and purchase data across multiple platforms\n
+        \u25AA Support for iOS, Mac, tvOS, Google Play, Windows, and Amazon app stores(*).\n
+        \u25AA Support to work with the Unity Distribution Portal to synchronize
+        catalogs and transactions with other app stores\n \u25AA Client-side receipt
+        validation for Apple App Store and Google Play\n\nAfter installing this package,
+        open the Services Window to enable In-App Purchasing to use these features."
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.6
+        - 0.0.7
+        - 0.0.8
+        - 0.0.9
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 0.0.17
+        - 0.0.18
+        - 0.0.19
+        - 2.0.0
+        - 2.0.1
+        - 2.0.3
+        - 2.0.5
+        - 2.0.6
+        - 2.1.0
+        - 2.1.1
+        - 2.2.0
+        - 2.2.1
+        - 2.2.2
+        - 3.0.0-pre.3
+        - 3.0.0-pre.4
+        - 3.0.0-pre.5
+        - 3.0.0-pre.6
+        - 3.0.1
+        - 3.0.2
+        - 3.1.0
+        - 3.2.1
+        - 3.2.2
+        - 3.2.3
+        - 4.0.0
+        - 4.0.3
+        - 4.1.0
+        - 4.1.1
+        - 4.1.2
+        compatible:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.6
+        - 0.0.7
+        - 0.0.8
+        - 0.0.9
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 0.0.17
+        - 0.0.18
+        - 0.0.19
+        - 2.0.0
+        - 2.0.1
+        - 2.0.3
+        - 2.0.5
+        - 2.0.6
+        - 2.1.0
+        - 2.1.1
+        - 2.2.0
+        - 2.2.1
+        - 2.2.2
+        - 3.0.0-pre.3
+        - 3.0.0-pre.4
+        - 3.0.0-pre.5
+        - 3.0.0-pre.6
+        - 3.0.1
+        - 3.0.2
+        - 3.1.0
+        - 3.2.1
+        - 3.2.2
+        - 3.2.3
+        - 4.0.0
+        - 4.0.3
+        - 4.1.0
+        - 4.1.1
+        - 4.1.2
+        verified: 4.0.3
+      dependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.unityanalytics
+        version: 1.0.0
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      - name: com.unity.modules.androidjni
+        version: 1.0.0
+      - name: com.unity.services.core
+        version: 1.0.1
+      resolvedDependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.unityanalytics
+        version: 1.0.0
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      - name: com.unity.modules.androidjni
+        version: 1.0.0
+      - name: com.unity.services.core
+        version: 1.0.1
+      keywords:
+      - purchasing
+      - iap
+      - unity
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 0
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637654165430000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.purchasing.git
+        revision: 4dccbbbbdb61c481d208d59a92c0c058ccad4e32
         path: 
     - packageId: com.unity.test-framework@1.1.29
       testable: 0
@@ -1501,6 +1948,77 @@ m_PackageAssets:
         type: 
         url: 
         revision: 
+        path: 
+    - packageId: com.unity.xr.legacyinputhelpers@2.1.8
+      testable: 0
+      isDirectDependency: 1
+      version: 2.1.8
+      source: 1
+      resolvedPath: D:\@Projects\The Lost Forest\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.8
+      assetPath: Packages/com.unity.xr.legacyinputhelpers
+      name: com.unity.xr.legacyinputhelpers
+      displayName: XR Legacy Input Helpers
+      author:
+        name: 
+        email: 
+        url: 
+      category: XR
+      type: 
+      description: This package includes the tracked pose driver for the legacy input
+        system, the XR Bindings Seeding Tool and 3Dof Arm Model support for the Tracked
+        Pose Driver. The Tracked Pose Driver is a behavior that enables GameObjects
+        to track input devices, the XR Bindings Seeding Tool adds a menu item under
+        the 'Assets' menu which populates the Input Asset with Unity's crossplatform
+        Input Bindings
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 2.1.8
+        compatible:
+        - 2.1.8
+        verified: 2.1.8
+      dependencies:
+      - name: com.unity.modules.vr
+        version: 1.0.0
+      - name: com.unity.modules.xr
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.modules.vr
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      - name: com.unity.modules.physics
+        version: 1.0.0
+      - name: com.unity.modules.xr
+        version: 1.0.0
+      - name: com.unity.modules.subsystems
+        version: 1.0.0
+      keywords:
+      - TPD
+      - Tracked Pose Driver
+      - XR
+      - Input
+      - Helpers
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.xr.legacyinputhelpers.git
+        revision: ed3b32c709a0e51cf73fda4b200c59b48955c4be
         path: 
     - packageId: com.unity.modules.ai@1.0.0
       testable: 0
@@ -3305,6 +3823,73 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ext.nunit.git
         revision: 29ea4d6504a5f58fb3a6934db839aa80ae6d9d88
         path: 
+    - packageId: com.unity.services.core@1.0.1
+      testable: 0
+      isDirectDependency: 0
+      version: 1.0.1
+      source: 1
+      resolvedPath: D:\@Projects\The Lost Forest\Library\PackageCache\com.unity.services.core@1.0.1
+      assetPath: Packages/com.unity.services.core
+      name: com.unity.services.core
+      displayName: Services Core
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'This package defines common components used by multiple Game
+        Service packages.
+
+        These are standardized and aim to unify the overall
+        experience of working with Game Services packages.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.1
+        - 1.1.0-pre.7
+        - 1.1.0-pre.8
+        - 1.1.0-pre.9
+        - 1.1.0-pre.10
+        - 1.1.0-pre.11
+        - 1.1.0-pre.41
+        compatible:
+        - 1.0.1
+        - 1.1.0-pre.7
+        - 1.1.0-pre.8
+        - 1.1.0-pre.9
+        - 1.1.0-pre.10
+        - 1.1.0-pre.11
+        - 1.1.0-pre.41
+        verified: 1.0.1
+      dependencies:
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637604883250000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
+        revision: 4cd880d4fd5c60597629249bf4f324e4c8d7aa2e
+        path: 
     - packageId: com.unity.nuget.newtonsoft-json@2.0.0
       testable: 0
       isDirectDependency: 0
@@ -3380,73 +3965,6 @@ m_PackageAssets:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
         revision: d2fd6ed876261bbd82f59199ad711e7667bf633a
-        path: 
-    - packageId: com.unity.services.core@1.0.1
-      testable: 0
-      isDirectDependency: 0
-      version: 1.0.1
-      source: 1
-      resolvedPath: D:\@Projects\The Lost Forest\Library\PackageCache\com.unity.services.core@1.0.1
-      assetPath: Packages/com.unity.services.core
-      name: com.unity.services.core
-      displayName: Services Core
-      author:
-        name: 
-        email: 
-        url: 
-      category: 
-      type: 
-      description: 'This package defines common components used by multiple Game
-        Service packages.
-
-        These are standardized and aim to unify the overall
-        experience of working with Game Services packages.'
-      status: 4
-      errors: []
-      versions:
-        all:
-        - 1.0.1
-        - 1.1.0-pre.7
-        - 1.1.0-pre.8
-        - 1.1.0-pre.9
-        - 1.1.0-pre.10
-        - 1.1.0-pre.11
-        - 1.1.0-pre.41
-        compatible:
-        - 1.0.1
-        - 1.1.0-pre.7
-        - 1.1.0-pre.8
-        - 1.1.0-pre.9
-        - 1.1.0-pre.10
-        - 1.1.0-pre.11
-        - 1.1.0-pre.41
-        verified: 1.0.1
-      dependencies:
-      - name: com.unity.modules.unitywebrequest
-        version: 1.0.0
-      resolvedDependencies:
-      - name: com.unity.modules.unitywebrequest
-        version: 1.0.0
-      keywords: []
-      registry:
-        id: main
-        name: 
-        url: https://packages.unity.com
-        scopes: []
-        isDefault: 1
-        capabilities: 7
-      hasRegistry: 1
-      hideInEditor: 1
-      entitlements:
-        isAllowed: 1
-      isAssetStorePackage: 0
-      datePublishedTicks: 637604883250000000
-      documentationUrl: 
-      hasRepository: 1
-      repository:
-        type: git
-        url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
-        revision: 4cd880d4fd5c60597629249bf4f324e4c8d7aa2e
         path: 
     - packageId: com.unity.mathematics@1.1.0
       testable: 0
