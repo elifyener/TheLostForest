@@ -17,18 +17,11 @@ public class Death : MonoBehaviour
         _collider2D = GetComponent<Collider2D>();
         anim = GetComponent<Animator>();
     }
-    private void Update() 
-    {
-        if (isDeath)
-        {
-            
-        }
-    }
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            anim.SetBool("grounded", false);
+            
             anim.SetTrigger("death");
             isAttack = true;
             isDeath = true;
@@ -36,6 +29,7 @@ public class Death : MonoBehaviour
             _collider2D.enabled = false;
             AudioSource.PlayClipAtPoint(audiohurt, transform.position);
             Invoke("LoadCheckPoint", 1f);
+            
         }
     }
 
@@ -45,5 +39,7 @@ public class Death : MonoBehaviour
         isDeath = false;
         isAttack = false;
         _collider2D.enabled = true;
+        CharacterControl.moving = true;
+
     }
 }

@@ -12,6 +12,7 @@ TagManager:
   - Carrot
   - Enemy
   - Door
+  - EndOfLevel
   layers:
   - Default
   - TransparentFX

@@ -9,6 +9,7 @@ public class CharacterControl : MonoBehaviour
     
     private bool grounded = true;
     private bool jump;
+    public static bool moving;
     private Rigidbody2D _rigidbody2D;
     private Animator anim; 
     private SpriteRenderer _spriteRenderer;
@@ -24,6 +25,7 @@ public class CharacterControl : MonoBehaviour
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        moving = true;
     }
     private void FixedUpdate() 
     {
@@ -54,54 +56,61 @@ public class CharacterControl : MonoBehaviour
         {
             _rigidbody2D.velocity = new Vector3(0, jumpForce/3, 0);
             _rigidbody2D.isKinematic = false;
+            moving = false;
+        }
+        else
+        {
+            CharacterControl.moving = true;
         }
         
         
     }
     private void Update() 
     {
-        if (grounded && (Input.GetAxis("Horizontal") != 0))
-        {
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        if(moving){
+            if (grounded && (Input.GetAxis("Horizontal") != 0))
             {
-                moveDirection = -1.0f;
-                _spriteRenderer.flipX = true;
-                anim.SetFloat("speed", speed);
+                if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+                {
+                    moveDirection = -1.0f;
+                    _spriteRenderer.flipX = true;
+                    anim.SetFloat("speed", speed);
+                }
+                else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+                {
+                    moveDirection = 1.0f;
+                    _spriteRenderer.flipX = false;
+                    anim.SetFloat("speed", speed);
+                }
+
             }
-            else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            else if (grounded)
             {
-                moveDirection = 1.0f;
-                _spriteRenderer.flipX = false;
-                anim.SetFloat("speed", speed);
+                moveDirection = 0.0f;
+                anim.SetFloat("speed", 0.0f);
             }
 
-        }
-        else if (grounded)
-        {
-            moveDirection = 0.0f;
-            anim.SetFloat("speed", 0.0f);
-        }
-
-        if (grounded && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow)))
-        {
-            if (Climb.isLadder)
+            if (grounded && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow)))
             {
-                Climb.isClimbing = true;
-                anim.SetTrigger("climb");
+                if (Climb.isLadder)
+                {
+                    Climb.isClimbing = true;
+                    anim.SetTrigger("climb");
+                }
+                else
+                {
+                    jump = true;
+                    anim.SetTrigger("jump");
+                }
+                grounded = false;
+                anim.SetBool("grounded", false);
             }
-            else
+            if (Climb.isLadder && !grounded && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow)))
             {
-                jump = true;
-                anim.SetTrigger("jump");
+                grounded = true;
+                anim.SetBool("grounded", true);
+                Climb.isClimbing = false;
             }
-            grounded = false;
-            anim.SetBool("grounded", false);
-        }
-        if (Climb.isLadder && !grounded && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow)))
-        {
-            grounded = true;
-            anim.SetBool("grounded", true);
-            Climb.isClimbing = false;
         }
         
     }
