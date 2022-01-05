@@ -9,7 +9,7 @@ public class CheckPoint : MonoBehaviour
     {
         if (other.gameObject.CompareTag("CheckPoint"))
         {
-            deathWall.checkPos = transform.position;
+            deathWall.checkPos = other.transform.position;
         }
     }
 }

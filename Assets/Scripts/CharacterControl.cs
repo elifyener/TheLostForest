@@ -50,6 +50,12 @@ public class CharacterControl : MonoBehaviour
         {
             _rigidbody2D.gravityScale = 0.9f;
         }
+        if (Death.isDeath)
+        {
+            _rigidbody2D.velocity = new Vector3(0, jumpForce/3, 0);
+            _rigidbody2D.isKinematic = false;
+        }
+        
         
     }
     private void Update() 
@@ -97,11 +103,7 @@ public class CharacterControl : MonoBehaviour
             anim.SetBool("grounded", true);
             Climb.isClimbing = false;
         }
-        if (Death.isDeath)
-        {
-            grounded = false;
-            anim.SetTrigger("death");
-        }
+        
     }
 
     private void OnCollisionEnter2D(Collision2D other) 
