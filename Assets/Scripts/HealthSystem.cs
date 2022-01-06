@@ -44,6 +44,7 @@ public class HealthSystem : MonoBehaviour
     IEnumerator RestartLevel(){
         yield return new WaitForSeconds(1f);
         health = 3;
+        Score.carrot = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     
