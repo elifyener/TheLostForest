@@ -10,6 +10,7 @@ public class HealthSystem : MonoBehaviour
     [SerializeField] GameObject live2;
     [SerializeField] GameObject live1;
     [SerializeField] GameObject live0;
+    [SerializeField] GameObject pauseScene;
     private void Update() 
     {
         switch (health)
@@ -37,15 +38,18 @@ public class HealthSystem : MonoBehaviour
                 live2.SetActive(false);
                 live1.SetActive(false);
                 live0.SetActive(true);
-                StartCoroutine(RestartLevel());
+                StartCoroutine(DeathPanel());
+                StartCoroutine(DeathTime());
             break;
         }
     }
-    IEnumerator RestartLevel(){
-        yield return new WaitForSeconds(1f);
-        health = 3;
-        Score.carrot = 0;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    IEnumerator DeathTime(){
+        yield return new WaitForSeconds(1.5f);
+        Time.timeScale = 0;
     }
-    
+    IEnumerator DeathPanel(){
+        yield return new WaitForSeconds(1.2f);
+        pauseScene.SetActive(true);
+    }
+
 }

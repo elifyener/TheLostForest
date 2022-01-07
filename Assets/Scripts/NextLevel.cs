@@ -13,6 +13,7 @@ public class NextLevel : MonoBehaviour
     }
     IEnumerator LoadLevel(){
         yield return new WaitForSeconds(1.5f);
+        Score.carrot = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
@@ -24,4 +25,6 @@ public class NextLevel : MonoBehaviour
             StartCoroutine(LoadLevel());
         }    
     }
+
+    
 }
