@@ -16,6 +16,8 @@ public class CharacterControl : MonoBehaviour
     private float moveDirection;
 
     private float vertical;
+    [SerializeField] public GameObject resumeScreen;
+    public static bool resume = false;
 
     private void Awake()
     {
@@ -67,7 +69,7 @@ public class CharacterControl : MonoBehaviour
     }
     private void Update() 
     {
-        if(moving){
+        if(moving && !resume){
             if (grounded && (Input.GetAxis("Horizontal") != 0))
             {
                 if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
@@ -111,6 +113,22 @@ public class CharacterControl : MonoBehaviour
                 anim.SetBool("grounded", true);
                 Climb.isClimbing = false;
             }
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!resume)
+            {
+                resume = true;
+                Time.timeScale = 0;
+                resumeScreen.SetActive(true);
+            }
+            else
+            {
+                resume = false;
+                Time.timeScale = 1;
+                resumeScreen.SetActive(false);
+            }
+            
         }
         
     }

@@ -44,11 +44,11 @@ public class HealthSystem : MonoBehaviour
         }
     }
     IEnumerator DeathTime(){
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
         Time.timeScale = 0;
     }
     IEnumerator DeathPanel(){
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(0.9f);
         pauseScene.SetActive(true);
     }
 
