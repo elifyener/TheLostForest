@@ -9,6 +9,7 @@ public class CharacterControl : MonoBehaviour
     
     private bool grounded = true;
     private bool jump;
+    private bool fly;
     public static bool moving;
     private Rigidbody2D _rigidbody2D;
     private Animator anim; 
@@ -37,8 +38,8 @@ public class CharacterControl : MonoBehaviour
         if (jump)
         {
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, jumpForce);
-            
-            jump = false; 
+            jump = false;
+            fly = true;
         }
         if (Enemy.isEnemyDeath)
         {
@@ -91,6 +92,27 @@ public class CharacterControl : MonoBehaviour
                 moveDirection = 0.0f;
                 anim.SetFloat("speed", 0.0f);
             }
+            if (fly)
+            {
+                if (Input.GetAxis("Horizontal") != 0)
+                {
+                    if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+                    {
+                        moveDirection = -1.0f;
+                        _spriteRenderer.flipX = true;
+                    }
+                    else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+                    {
+                        moveDirection = 1.0f;
+                        _spriteRenderer.flipX = false;
+                    }
+
+                }
+                else
+                {
+                    moveDirection = 0.0f;
+                } 
+            }
 
             if (grounded && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow)))
             {
@@ -138,6 +160,7 @@ public class CharacterControl : MonoBehaviour
         if (other.gameObject.CompareTag("Ground"))
         {
             grounded = true;
+            fly = false;
             anim.SetBool("grounded", true);
         }
     }
