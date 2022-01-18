@@ -108,10 +108,6 @@ public class CharacterControl : MonoBehaviour
                     }
 
                 }
-                else
-                {
-                    moveDirection = 0.0f;
-                } 
             }
 
             if (grounded && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow)))
