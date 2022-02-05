@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\GotoMainMenu.cs" />
      <Compile Include="Assets\Scripts\Climb.cs" />
      <Compile Include="Assets\Free Pixel Art Hills\Demo\MoveBackground.cs" />
      <Compile Include="Assets\Scripts\CheckPoint.cs" />
@@ -52,7 +53,7 @@
      <Compile Include="Assets\Scripts\StickyPlatform.cs" />
      <Compile Include="Assets\Scripts\HealthSystem.cs" />
      <Compile Include="Assets\Scripts\Platform.cs" />
-     <Compile Include="Assets\Scripts\GotoMainMenu.cs" />
+     <Compile Include="Assets\Scripts\ChestMove.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

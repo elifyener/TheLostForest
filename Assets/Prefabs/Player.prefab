@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3046080299375080756}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: -50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3046080299431551801}
@@ -246,6 +246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 6
   speed: 4
+  resumeScreen: {fileID: 0}
 --- !u!114 &3046080299431551805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,6 +261,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioStar: {fileID: 8300000, guid: 1368f20bb05eb9f4f88ea46b29d2ce3b, type: 3}
   _audioSource: {fileID: 3046080299431551806}
+  _scoreText: {fileID: 0}
+  _carrotsImage0: {fileID: 0}
+  _carrotsImage1: {fileID: 0}
+  _carrotsImage2: {fileID: 0}
 --- !u!114 &3046080299431551807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,6 +292,7 @@ MonoBehaviour:
   player: {fileID: 3046080299431551782}
   checkPos: {x: 0, y: 0}
   audiohurt: {fileID: 8300000, guid: 539da07ecf4e5fa48bf65e111c96e77c, type: 3}
+  audiosource: {fileID: 3046080299431551806}
 --- !u!114 &3046080299431551793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,6 +305,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30b91715f6291f54990cbb545909d493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  live3: {fileID: 0}
+  live2: {fileID: 0}
+  live1: {fileID: 0}
+  live0: {fileID: 0}
+  pauseScene: {fileID: 0}
 --- !u!114 &3046080299431551794
 MonoBehaviour:
   m_ObjectHideFlags: 0
