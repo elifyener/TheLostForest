@@ -12,6 +12,7 @@ public class Death : MonoBehaviour
     public static bool isAttack;
     [SerializeField] private AudioClip audiohurt;
     [SerializeField] private AudioSource audiosource;
+    public static int deathcounter = 0;
 
     private void Start() 
     {
@@ -27,6 +28,7 @@ public class Death : MonoBehaviour
             isAttack = true;
             isDeath = true;
             HealthSystem.health--;
+            deathcounter += 1;
             _collider2D.enabled = false;
             audiosource.PlayOneShot(audiohurt, 0.5f);
             Invoke("LoadCheckPoint", 1f);

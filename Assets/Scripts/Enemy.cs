@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private AudioClip audioAttackEnemy;
     [SerializeField] private AudioSource audiosourceEnemy;
     public static bool isEnemyDeath = false;
+    public static int killcounter = 0;
     private bool attack;
     private void Awake()
     {
@@ -35,6 +36,7 @@ public class Enemy : MonoBehaviour
             anim.SetTrigger("enemyDeath");
             isEnemyDeath = true;
             Invoke("EnemyDestroy", 1f);
+            killcounter += 1;
         }
     }
 

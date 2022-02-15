@@ -8,8 +8,13 @@ public class Resume : MonoBehaviour
 
     public void ResumeGame()
     {
+        StartCoroutine(ResumeDelay());
         resumeScreen.SetActive(false);
         CharacterControl.resume = false;
         Time.timeScale = 1;
+    }
+    IEnumerator ResumeDelay()
+    {
+        yield return new WaitForSeconds(0.5f);
     }
 }

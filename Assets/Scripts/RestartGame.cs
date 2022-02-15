@@ -5,16 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class RestartGame : MonoBehaviour
 {
-    [SerializeField] public AudioClip _audioclip;
-    [SerializeField] public AudioSource _audiosource;
     [SerializeField] public GameObject gameOverScene;
     public void Restart()
     {
-        _audiosource.PlayOneShot(_audioclip, 1);
+        Invoke("RestartDelay",1f);
         gameOverScene.SetActive(false);
+        CharacterControl.resume = false;
         HealthSystem.health = 3;
         Score.carrot = 0;
+        Score.score = 0;
+        Enemy.killcounter = 0;
+        Death.deathcounter = 0;
         Time.timeScale = 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(1);
+    }
+    void RestartDelay()
+    {
+        //
     }
 }

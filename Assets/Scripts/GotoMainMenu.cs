@@ -13,6 +13,9 @@ public class GotoMainMenu : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         Score.carrot = 0;
         HealthSystem.health = 3;
+        Score.score = 0;
+        Enemy.killcounter = 0;
+        Death.deathcounter = 0;
         SceneManager.LoadScene(0);
     }
 }

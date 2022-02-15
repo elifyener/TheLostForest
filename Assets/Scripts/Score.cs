@@ -12,7 +12,7 @@ public class Score : MonoBehaviour
     [SerializeField] private Image _carrotsImage0;
     [SerializeField] private Image _carrotsImage1;
     [SerializeField] private Image _carrotsImage2;
-    private int score = 0;
+    public static int score = 0;
     public static int carrot = 0;
     private void Start()
     {
@@ -25,7 +25,7 @@ public class Score : MonoBehaviour
         {
             score++;
             _scoreText.text = score.ToString();
-            _audioSource.PlayOneShot(audioStar, 0.5f);
+            _audioSource.PlayOneShot(audioStar, 0.05f);
             Destroy(other.gameObject);
         }
         else if (other.gameObject.CompareTag("Carrot"))
@@ -49,7 +49,7 @@ public class Score : MonoBehaviour
                 break;
             }
             carrot++;
-            _audioSource.PlayOneShot(audioStar, 0.5f);
+            _audioSource.PlayOneShot(audioStar, 0.05f);
             Destroy(other.gameObject);
         }
     }

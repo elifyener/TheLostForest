@@ -9,8 +9,10 @@ public class ChestMove : MonoBehaviour
     public float speed;
     private float spawnPosX=6;
     [SerializeField] GameObject carrot;
+    private AudioSource audioSource;
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
         InvokeRepeating("SpawnRandomCarrot", 2, 1.5f);
     }
@@ -47,6 +49,7 @@ public class ChestMove : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         anim.SetBool("ChestEat",true);
+        audioSource.Play();
         Destroy(other.gameObject);
         Invoke("ChestClose",0.5f);
     }
