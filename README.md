@@ -1,22 +1,18 @@
 # The Lost Forest
-The Lost Forest, Unity2D ile geliştirilmiş, açık kaynak bir 2D platform oyunudur. Karakterimizin amacı, sandıklarda bulunan havuçları toplayarak oyunun sonuna ulaşmaktır. Yıldızları toplayarak ve düşmanları etkisiz hale getirerek puan kazanabileceğimiz bir geleneksel platform oyunu oynama deneyimi sunar.
+The Lost Forest is an open source 2D platform game developed with Unity2D. The aim of our character is to reach the end of the game by collecting the carrots in the chests. It offers a traditional platform game playing experience where we can earn points by collecting stars and neutralizing enemies.
 
-Not: Unity2D sürümü 2020.3.3f1
+Note: Unity2D version is 2020.3.3f1
 
-| [:sparkles: Getting Started](#getting-started) | [:rocket: Download](#download) | [:camera: Screenshots](#screenshots) |
-| --------------- | -------- | ----------- |
+| [:sparkles: Getting Started](#getting-started) | [:rocket: Download](#download) | [:camera: Screenshots](#screenshots) | [:movie_camera: **See the Trailer**](https://youtu.be/...)
+| --------------- | -------- | ----------- | ----------- |
 
 <p align="center">
-  <img src="https://img.itch.zone/...png" />
+  <img src="https://github.com/elifyener/TheLostForest/blob/master/images/game-banner.png" />
 </p>
-
-[:camera: See Screenshots](#screenshots)
-
-[:movie_camera: **See the Trailer**](https://youtu.be/...)
 
 ## Getting Started
 
-Follow the below instructions to get started with Red Runner source code:
+Follow the below instructions to get started with The Lost Forest source code:
 
 1. [Make sure you have all Requirements](#requirements)
 2. [Download Source Code](#download)
@@ -31,7 +27,7 @@ Make sure you have the below requirements before starting:
 
 ## Download
 
-You can get access to Red Runner source code by using one of the following ways:
+You can get access to The Lost Forest source code by using one of the following ways:
 
 - [:sparkles: Download Source Code](https://github.com/elifyener/TheLostForest/archive/master.zip)
 - [:fire: Download Source Code from Itch.io](https://itchio..)
@@ -41,26 +37,46 @@ You can get access to Red Runner source code by using one of the following ways:
 git clone https://github.com/elifyener/TheLostForest.git
 ```
 
-Also you can the build version of the Red Runner using the following ways:
+Also you can the build version of the The Lost Forest using the following ways:
 
 - [:star: Download from Itch.io](https://itchio...)
 
 ## Screenshots
 
 <p align="center">
-  <img src="https://img.itch.zone/....png" />
+  <img src="https://github.com/elifyener/TheLostForest/blob/master/images/tlf-1.png" />
 </p>
 
 <p align="center">
-  <img src="https://img.itch.zone/...png" />
+  <img src="https://github.com/elifyener/TheLostForest/blob/master/images/tlf-2.png" />
 </p>
 
 <p align="center">
-  <img src="https://img.itch.zone/....png" />
+  <img src="https://github.com/elifyener/TheLostForest/blob/master/images/tlf-3.png" />
 </p>
 
 <p align="center">
-  <img src="https://img.itch.zone/....png" />
+  <img src="https://github.com/elifyener/TheLostForest/blob/master/images/tlf-4.png" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/elifyener/TheLostForest/blob/master/images/tlf-5.png" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/elifyener/TheLostForest/blob/master/images/tlf-6.png" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/elifyener/TheLostForest/blob/master/images/tlf-7.png" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/elifyener/TheLostForest/blob/master/images/tlf-8.png" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/elifyener/TheLostForest/blob/master/images/tlf-9.png" />
 </p>
 
 ## Credits
