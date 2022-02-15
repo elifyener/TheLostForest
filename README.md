@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/elifyener/TheLostForest/blob/master/images/game-banner2.png" />
+</p>
+
 # The Lost Forest
 The Lost Forest is an open source 2D platform game developed with Unity2D. The aim of our character is to reach the end of the game by collecting the carrots in the chests. It offers a traditional platform game playing experience where we can earn points by collecting stars and neutralizing enemies.
 
@@ -5,10 +9,6 @@ Note: Unity2D version is 2020.3.3f1
 
 | [:sparkles: Getting Started](#getting-started) | [:rocket: Download](#download) | [:camera: Screenshots](#screenshots) | [:movie_camera: **See the Trailer**](https://youtu.be/...)
 | --------------- | -------- | ----------- | ----------- |
-
-<p align="center">
-  <img src="https://github.com/elifyener/TheLostForest/blob/master/images/game-banner.png" />
-</p>
 
 ## Getting Started
 
@@ -30,8 +30,7 @@ Make sure you have the below requirements before starting:
 You can get access to The Lost Forest source code by using one of the following ways:
 
 - [:sparkles: Download Source Code](https://github.com/elifyener/TheLostForest/archive/master.zip)
-- [:fire: Download Source Code from Itch.io](https://itchio..)
-- Clone the repository locally:
+- :fire:  Clone the repository locally:
 
 ```bash
 git clone https://github.com/elifyener/TheLostForest.git
@@ -42,10 +41,6 @@ Also you can the build version of the The Lost Forest using the following ways:
 - [:star: Download from Itch.io](https://itchio...)
 
 ## Screenshots
-
-<p align="center">
-  <img src="https://github.com/elifyener/TheLostForest/blob/master/images/tlf-1.png" />
-</p>
 
 <p align="center">
   <img src="https://github.com/elifyener/TheLostForest/blob/master/images/tlf-2.png" />
@@ -81,11 +76,13 @@ Also you can the build version of the The Lost Forest using the following ways:
 
 ## Credits
 
-- Graphics: [Assets](https://itchio...)
+- Graphics: [Sunny Land Forest](https://assetstore.unity.com/packages/2d/characters/sunny-land-forest-108124), [Free Pixel Art Hill](https://assetstore.unity.com/packages/2d/textures-materials/nature/free-pixel-art-hill-133118)
+- Sounds: [Michael-DB](https://freesound.org/people/Michael-DB/sounds/489035/), [Mickleness](https://freesound.org/people/mickleness/sounds/316975/?page=1#comment), [CrystalMeshDavid](https://freesound.org/people/CrystalMeshDavid/sounds/442911/)
 - Game Engine: [Unity](https://unity3d.com/)
 - Thanks to all of the game development community for their awesome help.
 
-
-MIT @ [..](https://github.com/..)
-
+## Authors
 Made with :heart: by [Elif Yener](https://github.com/elifyener)
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/elifyener/TheLostForest/blob/master/LICENSE) file for details
