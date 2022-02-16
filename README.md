@@ -38,7 +38,7 @@ git clone https://github.com/elifyener/TheLostForest.git
 
 Also you can the build version of the The Lost Forest using the following ways:
 
-- [:star: Download from Itch.io](https://itchio...)
+- [:star: Download from Itch.io](https://elifyener.itch.io/the-lost-forest)
 
 ## Screenshots
 
