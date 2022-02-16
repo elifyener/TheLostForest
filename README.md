@@ -7,7 +7,7 @@ The Lost Forest is an open source 2D platform game developed with Unity2D. The a
 
 Note: Unity2D version is 2020.3.3f1
 
-| [:sparkles: Getting Started](#getting-started) | [:rocket: Download](#download) | [:camera: Screenshots](#screenshots) | [:movie_camera: **See the Trailer**](https://youtu.be/...)
+| [:sparkles: Getting Started](#getting-started) | [:rocket: Download](#download) | [:camera: Screenshots](#screenshots) | [:movie_camera: **See the Walkthrough**](https://www.youtube.com/watch?v=ByTSzMksCyA)
 | --------------- | -------- | ----------- | ----------- |
 
 ## Getting Started
