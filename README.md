@@ -3,7 +3,7 @@
 </p>
 
 # The Lost Forest
-The Lost Forest is an open source 2D platform game developed with Unity2D. The aim of our character is to reach the end of the game by collecting the carrots in the chests. It offers a traditional platform game playing experience where we can earn points by collecting stars and neutralizing enemies.
+The Lost Forest is an open-source 2D platform game developed with Unity2D. Our character aims to reach the end of the game by collecting the carrots in the chests. It offers a traditional platform game playing experience where we can earn points by collecting stars and neutralizing enemies.
 
 Note: Unity2D version is 2020.3.3f1
 
